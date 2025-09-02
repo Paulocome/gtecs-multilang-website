@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GTECS - Your Vision, Our Execution</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <h1>GTECS</h1>
+    <ul>
+      <li><a href="#" data-section="home">Home</a></li>
+      <li><a href="#" data-section="about">About</a></li>
+      <li><a href="#" data-section="contact">Contact</a></li>
+    </ul>
+    <div class="language-switch">
+      <button id="enBtn">EN</button>
+      <button id="ptBtn">PT</button>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <!-- Home Section -->
+  <section id="home" class="active">
+    <div class="hero">
+      <h2 id="homeTitle"></h2>
+      <p id="homeDesc"></p>
+    </div>
+    <div class="services">
+      <h3 id="servicesTitle"></h3>
+      <div class="slider">
+        <div class="slide active" id="slide1"></div>
+        <div class="slide" id="slide2"></div>
+        <div class="slide" id="slide3"></div>
+      </div>
+      <button id="prev">Prev</button>
+      <button id="next">Next</button>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about">
+      <h2 id="aboutTitle"></h2>
+      <p id="aboutDesc"></p>
+    </div>
+    <div class="team">
+      <h3 id="teamTitle"></h3>
+      <p id="teamDesc"></p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="contact">
+      <h2 id="contactTitle"></h2>
+      <form id="contactForm">
+        <label for="name" id="nameLabel"></label>
+        <input type="text" id="name" required>
+        <label for="email" id="emailLabel"></label>
+        <input type="email" id="email" required>
+        <label for="message" id="messageLabel"></label>
+        <textarea id="message" required></textarea>
+        <button type="submit" id="sendBtn"></button>
+      </form>
+      <p id="formMessage"></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 GTECS. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
